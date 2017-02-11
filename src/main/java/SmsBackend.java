@@ -12,8 +12,6 @@ import static spark.Spark.*;
 public class SmsBackend {
     public static void main(String[] args) {
 
-        get("/", (req, res) -> "Hello, World");
-
         TwilioRestClient client = new TwilioRestClient("AC7c44c7fce4d3faa3e5c38575c1831ac0",
                 "21f6597479968c26c22f6482a2ea6bb2");
 
