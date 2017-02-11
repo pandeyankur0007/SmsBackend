@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SmsBackend.iml" filepath="$PROJECT_DIR$/.idea/modules/SmsBackend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SmsBackend_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SmsBackend_main.iml" group="SmsBackend" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SmsBackend_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SmsBackend_test.iml" group="SmsBackend" />
+    </modules>
+  </component>
+</project>
