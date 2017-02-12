@@ -21,13 +21,12 @@ public class SmsBackend {
             port = 4567;
         }
         Spark.port(port);
-        TwilioRestClient client = new TwilioRestClient("AC7c44c7fce4d3faa3e5c38575c1831ac0",
-                "21f6597479968c26c22f6482a2ea6bb2");
+        TwilioRestClient client = new TwilioRestClient(System.getenv("TWILIO_ACCOUNT_SID"), System.getenv("TWILIO_AUTH_TOKEN"));
 
         post("/sms", (req, res) -> {
             String body = req.queryParams("Body");
             String to = req.queryParams("To");
-            String from = "+14012883436";
+            String from = System.getenv("TWILIO_NUMBER");
 
             Map<String, String> callParams = new HashMap<>();
             callParams.put("To", to);
